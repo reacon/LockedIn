@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-5w6_^%xi%w%x^^+u!%@(wfw$vw7hxqlo@8a5s))%zl(hye95*q'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,11 +31,9 @@ ALLOWED_HOSTS = []
 
 STATIC_URL = '/static/'
 
-# Add the location where Django will look for static files
 
-# Application definition
-GOOGLE_CLIENT_ID = "1007180862161-lu06qa779qu3v20l1jsrp4ttaj10a4qe.apps.googleusercontent.com"
-OPENAI_API_KEY = "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"
+GOOGLE_CLIENT_ID = ""
+OPENAI_API_KEY = ""
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'APP': {
@@ -65,19 +63,19 @@ INSTALLED_APPS = [
  
 SITE_ID = 1
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # React development server
+    "http://localhost:3000",  
 ]
 CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
 ]
 CSRF_COOKIE_SAMESITE = 'Lax'
-CSRF_COOKIE_SECURE = False  # Set to True in production
+CSRF_COOKIE_SECURE = False  
 CSRF_COOKIE_HTTPONLY = False
 
 # Session settings
 SESSION_COOKIE_SAMESITE = 'Lax'
-SESSION_COOKIE_SECURE = False  # Set to True in production
+SESSION_COOKIE_SECURE = False  
 SESSION_COOKIE_HTTPONLY = True
 RAPID_API_KEY = "bd423dbd17msh8b59c1525e88307p139ac0jsn86a8420f6e55"
 
@@ -130,9 +128,9 @@ WSGI_APPLICATION = 'LockedIn.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'job_tracker_db',  # Your database name
-        'USER': 'postgres',  # Your PostgreSQL user
-        'PASSWORD': 'postgres',  # Your PostgreSQL password
+        'NAME': '',  
+        'USER': '', 
+        'PASSWORD': '',  
         'HOST': 'localhost',
         'PORT': '5432',
     }
